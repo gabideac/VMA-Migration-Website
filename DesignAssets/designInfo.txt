@@ -1,0 +1,6 @@
+Primary pallete:
+-blue : #004494
+-yellow : #ffd617
+- grey and white
+
+light grey : #E3E3E3
