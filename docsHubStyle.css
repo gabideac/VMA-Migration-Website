@@ -17,3 +17,36 @@ html {
     align-items: space-around;
     align-content: space-around;
 }
+
+.video {
+    margin: 10px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.containVideos {
+    display: flex;
+    justify-content: center;
+}
+
+.ytVideo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #E3E3E3;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.openYtVideo {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
