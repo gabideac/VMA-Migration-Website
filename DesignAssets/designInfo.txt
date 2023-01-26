@@ -1,3 +1,10 @@
+Primary pallete v2.0:
+white : #F9F7F7
+light blue : #DBE2EF
+blue : #3F72AF
+dark blue : #112D4E
+
+
 Primary pallete:
 -blue : #004494
 -yellow : #ffd617
