@@ -1,0 +1,33 @@
+body {
+    background-color: #F9F7F7;
+    font-family: 'Crimson Text', serif;
+}
+
+.authentication input[type="radio"] {
+    display: none;
+}
+
+.authentication {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5rem;
+    padding: 1.5rem;
+}
+
+.authentication .masterLabel {
+    padding: 1.5rem;
+    background-color: #DBE2EF;
+    font-weight: bold;
+}
+
+.authentication .authenticationForum {
+    width: 100%;
+    padding: 1.5rem;
+    order: 1;
+    display: none;
+}
+
+.authentication input[type="radio"]:checked+label+.authenticationForum {
+    display: block;
+}

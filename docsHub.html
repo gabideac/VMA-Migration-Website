@@ -2,101 +2,192 @@
 <html lang="en">
 
 <head>
+    <title>VMA Migration Agency</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VMA Migration Agency</title>
-    <link rel="icon" href="DesignAssets\logo.jpg">
-    <link rel="stylesheet" type="text/css" href="docsHubStyle.css" id="style">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style/docsHubStyle.css">
+    <link rel="icon" href="DesignAssets\logoV3.1noText.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <h1>Why do you want to come to Europe?</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <div class="cards">
-        <div class="card" style="width: 18rem;">
-            <img src="DesignAssets\stockImages\familyHomePage.jpg" class="card-img-top" alt="family">
-            <div class="card-body">
-                <h5 class="card-title">Family Reunification</h5>
-                <p class="card-text">You want to join you're family living in Europe.</p>
-                <p class="card-text">Learn more:</p>
-                <a href="#" class="btn btn-primary">Read</a>
-                <a href="#" class="btn btn-primary" onclick="openRightVideo(1)">Watch</a>
+    <div class="masterContainer" id="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="topbar container-fluid">
+                <a class="white-text navbar-brand" href="index.html">VMA</a>
+                <button class="white-text navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="toggle collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="white-text nav-link" href="profile.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" white-text nav-link" href="docsHub.html">Plans</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="white-text nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><img class="flag"
+                                            src="DesignAssets\LanguageFlags\english.png"> English</a></li>
+                                <li><a class="dropdown-item" href="#"><img class="flag"
+                                            src="DesignAssets\LanguageFlags\french.jpg"> French</a></li>
+                                <li> <a class="dropdown-item" href="#"><img class="flag"
+                                            src="DesignAssets\LanguageFlags\ro.png"> Romana</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <div class="logo">
+            <img class="logoimage" src="DesignAssets/logoV3.0.png">
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="DesignAssets\stockImages\workPage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Emigration</h5>
-                <p class="card-text">You want to settle permanently in Europe</p>
-                <p class="card-text">Learn more:</p>
-                <a href="#" class="btn btn-primary">Read</a>
-                <a href="#" class="btn btn-primary" onclick="openRightVideo(2)">Watch</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="DesignAssets\stockImages\studyPage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Study</h5>
-                <p class="card-text">You want to study in Europe</p>
-                <p class="card-text">Learn more:</p>
-                <a href="#" class="btn btn-primary">Read</a>
-                <a href="#" class="btn btn-primary" onclick="openRightVideo(3)">Watch</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="DesignAssets\stockImages\businessPage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Business</h5>
-                <p class="card-text">You want to do business in Europe.</p>
-                <p class="card-text">Learn more:</p>
-                <a href="#" class="btn btn-primary">Read</a>
-                <a href="#" class="btn btn-primary" onclick="openRightVideo(4)">Watch</a>
+        <div class="containContent">
 
+            <div class="introText">
+                <h1>Why do you want to come to Europe?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur
+                    sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="DesignAssets\stockImages\familyHomePage.jpg" class="card-img-top" alt="family">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Reunification</h5>
+                        <p class="card-text">You want to join you're family living in Europe.</p>
+                        <p class="card-text">Learn more:</p>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(5)">Read</a>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(1)">Watch</a>
+                        <a href="#" class="buttons btn btn-primary">Begin</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="DesignAssets\stockImages\workPage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Emigration</h5>
+                        <p class="card-text">You want to settle permanently in Europe</p>
+                        <p class="card-text">Learn more:</p>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(6)">Read</a>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(2)">Watch</a>
+                        <a href="#" class="buttons btn btn-primary">Begin</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="DesignAssets\stockImages\studyPage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Study</h5>
+                        <p class="card-text">You want to study in Europe</p>
+                        <p class="card-text">Learn more:</p>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(7)">Read</a>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(3)">Watch</a>
+                        <a href="#" class="buttons btn btn-primary">Begin</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="DesignAssets\stockImages\businessPage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Business</h5>
+                        <p class="card-text">You want to do business in Europe.</p>
+                        <p class="card-text">Learn more:</p>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(8)">Read</a>
+                        <a href="#" class="buttons btn btn-primary" onclick="openRightDoc(4)">Watch</a>
+                        <a href="#" class="buttons btn btn-primary">Begin</a>
+
+                    </div>
+                </div>
             </div>
         </div>
+        <footer>
+            <div class="contact">
+                <h6 class="ct"> Contact: </h6>
+                <p class="ct">Email : email@gmail.com</p>
+                <p class="ct">Phone : 0712345678</p>
+                <p class="ct">Adress : Cluj-Napoca, Romania</p>
+            </div>
+            <div class="social">
+                <h6> Follow us: </h6>
+                <a href="#" class="sc fa fa-facebook"></a>
+                <a href="#" class="sc fa fa-youtube"></a>
+                <a href="#" class="sc fa fa-instagram"></a>
+            </div>
+
+            <img class="logofooter" src="DesignAssets\logoV3.0.png">
+
+        </footer>
     </div>
-    <div class="containVideos">
-        <div class="ytVideo" id="videoOne">
+    <div>
+        <div class="docWindow" id="videoOne">
             <iframe class="video" id="playerOne" width="560" height="315"
                 src="https://www.youtube.com/embed/zjcpChCIfMo" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <a href="#" class="btn btn-primary " onclick="closeYtVideo()">Close</a>
+            <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
         </div>
-        <div class="ytVideo" id="videoTwo">
+        <div class="docWindow" id="videoTwo">
             <iframe class="video" id="playerTwo" width="560" height="315"
                 src="https://www.youtube.com/embed/zjcpChCIfMo" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <a href="#" class="btn btn-primary " onclick="closeYtVideo()">Close</a>
+            <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
         </div>
-        <div class="ytVideo" id="videoThree">
+        <div class="docWindow" id="videoThree">
             <iframe class="video" id="playerThree" width="560" height="315"
                 src="https://www.youtube.com/embed/zjcpChCIfMo" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <a href="#" class="btn btn-primary " onclick="closeYtVideo()">Close</a>
+            <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
         </div>
-        <div class="ytVideo" id="videoFour">
+        <div class="docWindow" id="videoFour">
             <iframe class="video" id="playerFour" src="https://www.youtube.com/embed/i9FrsWCcOhE"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <a href="#" class="btn btn-primary " onclick="closeYtVideo()">Close</a>
+            <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
         </div>
     </div>
-    <script type="text/javascript" src="docsHubPopUp.js"></script>
+    <div class="pdfDoc docWindow" id="pdfOne">
+        <iframe class="pdf" src="DesignAssets\tempExp.pdf" title="Pdf reader" width="560" height="315"></iframe>
+        <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
+    </div>
+    <div class="pdfDoc docWindow" id="pdfTwo">
+        <iframe class="pdf" src="DesignAssets\tempExp.pdf" title="Pdf reader" width="560" height="315"></iframe>
+        <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
+    </div>
+    <div class="pdfDoc docWindow" id="pdfThree">
+        <iframe class="pdf" src="DesignAssets\tempExp.pdf" title="Pdf reader" width="560" height="315"></iframe>
+        <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
+    </div>
+    <div class="pdfDoc docWindow" id="pdfFour">
+        <iframe class="pdf" src="DesignAssets\tempExp.pdf" title="Pdf reader" width="560" height="315"></iframe>
+        <a href="#" class="btn btn-primary " onclick="toggleBackroundBlur()">Close</a>
+    </div>
+
+    <script type="text/javascript" src="Script/windowPopUp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

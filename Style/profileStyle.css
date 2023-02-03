@@ -1,0 +1,107 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #F9F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topbar {
+    background-color: #3F72AF;
+}
+
+.white-text {
+    color: #F9F7F7;
+}
+
+.navbar {
+    padding: 0rem;
+    background-color: #3F72AF;
+    font-family: 'Crimson Text', serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 0.2rem;
+    pointer-events: none;
+}
+
+.logoimage {
+    height: 8rem;
+    width: 8rem;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #F9F7F7;
+    font-family: 'Crimson Text', serif;
+    color: #112D4E;
+    width: 95%;
+}
+
+.downloadCard {
+    margin-top: 6.5rem;
+
+}
+
+.buttons {
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: #3F72AF;
+    border-color: #3F72AF;
+    color: #F9F7F7;
+    font-family: 'Crimson Text', serif;
+}
+
+.buttons:hover {
+    background-color: #112D4E;
+    border-color: #112D4E;
+}
+
+footer {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Crimson Text', serif;
+    background-color: #DBE2EF;
+    color: #112D4E;
+}
+
+.logofooter {
+    height: 4em;
+    width: 4rem;
+}
+
+.ct {
+    margin-bottom: 0;
+}
+
+.sc {
+    margin-right: 5px;
+}
+
+.flag {
+    width: 12px;
+    height: 10px;
+}
+
+@media (min-width: 600px) {
+    .card {
+        width: 75%;
+    }
+}

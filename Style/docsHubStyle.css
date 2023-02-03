@@ -1,0 +1,179 @@
+.masterContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F9F7F7;
+    transition: 0.5s;
+}
+
+.masterContainer#container.active {
+    filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    user-select: none;
+}
+
+.topbar {
+    background-color: #3F72AF;
+}
+
+.navbar {
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+}
+
+.card-body {
+    background-color: #F9F7F7;
+}
+
+.white-text {
+    color: #F9F7F7;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 0.2rem;
+    pointer-events: none;
+}
+
+.toggle {
+    border-color: #3F72AF;
+}
+
+.logoimage {
+    height: 8rem;
+    width: 8rem;
+}
+
+.containContent {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 90%;
+    margin-top: 3rem;
+    font-family: 'Crimson Text', serif;
+    color: #112D4E;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1.5rem;
+}
+
+.flag {
+    width: 12px;
+    height: 10px;
+}
+
+.buttons {
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: #3F72AF;
+    border-color: #3F72AF;
+    color: #F9F7F7;
+    font-family: 'Crimson Text', serif;
+}
+
+.buttons:hover {
+    background-color: #112D4E;
+    border-color: #112D4E;
+}
+
+footer {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Crimson Text', serif;
+    background-color: #DBE2EF;
+    color: #112D4E;
+}
+
+.logofooter {
+    height: 4em;
+    width: 4rem;
+}
+
+.ct {
+    margin-bottom: 0;
+}
+
+.sc {
+    margin-right: 5px;
+}
+
+.pdf {
+    margin: 10px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 100%;
+}
+
+.pdfDoc {
+    height: 95%;
+}
+
+.video {
+    margin: 10px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 100%;
+}
+
+
+.docWindow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #F9F7F7;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    left: 50%;
+    padding: 2rem;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.docWindow.active {
+    position: absolute;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media (min-width: 700px) {
+    .introText {
+        width: 75%;
+    }
+
+    .docWindow {
+        width: 40%;
+    }
+
+    .card {
+        margin: 3rem;
+    }
+}
